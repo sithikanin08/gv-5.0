@@ -307,7 +307,7 @@ const RolesSection: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="flex justify-end pt-4">
+                  <div className="flex justify-center md:justify-end pt-4">
                     <a
                       href="https://forms.gle/cWwMryX5tgkW28tq6"
                       target="_blank"
