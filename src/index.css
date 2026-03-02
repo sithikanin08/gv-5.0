@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@theme {
+  /* === Color Palette === */
+  --color-brand-primary: #7C3AED;
+  --color-brand-primary-light: #A78BFA;
+  --color-brand-accent: #8B5CF6;
+  --color-brand-glow: #8B5CF6;
+
+  --color-bg-dark: #0F0720;
+  --color-bg-light: #F8F7FF;
+  --color-bg-white: #FFFFFF;
+
+  --color-text-primary: #111827;
+  --color-text-secondary: #6B7280;
+  --color-text-white: #FFFFFF;
+
+  /* === Spacing === */
+  --spacing-section: 80px;
+  --spacing-container: 24px;
+  --spacing-gap: 24px;
+  --spacing-gap-lg: 40px;
+  --spacing-card: 24px;
+
+  /* === Radius === */
+  --radius-card: 16px;
+  --radius-btn: 12px;
+  --radius-pill: 9999px;
+
+  /* === Container === */
+  --container-max: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
