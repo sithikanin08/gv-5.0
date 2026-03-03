@@ -14,8 +14,8 @@ const Hero: React.FC = () => {
         <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-[#8B5CF6]/6 rounded-full blur-[160px]" />
       </div>
 
-      {/* Pushed down with pt-24 so content sits lower in the viewport */}
-      <div className="relative z-10 w-full mx-auto px-6 text-center pt-16 md:pt-20" style={{ maxWidth: '1200px' }}>
+      {/* Container with top/bottom padding to ensure content fits under nav and leaves space at the bottom */}
+      <div className="relative z-10 w-full mx-auto px-6 text-center pt-20 pb-10 md:pt-[130px] md:pb-[80px]" style={{ maxWidth: '1200px' }}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

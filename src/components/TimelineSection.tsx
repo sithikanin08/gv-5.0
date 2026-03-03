@@ -44,13 +44,7 @@ const timelineItems = [
         title: "OC Announcement",
         description: "The full Organizing Committee is officially announced.",
         icon: GraduationCap,
-    },
-    {
-        date: "19th July",
-        title: "Global Village 5.0",
-        description: "The flagship cultural event takes place, showcasing diversity, talent, and leadership.",
-        icon: PartyPopper,
-    },
+    }
 ];
 
 const TimelineSection: React.FC = () => {

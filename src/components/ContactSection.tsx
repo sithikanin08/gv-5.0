@@ -24,7 +24,7 @@ const contacts = [
         name: "Nadali Hansani",
         role: "LCVP oGV B2C",
         email: "nadalihansani@aiesec.net",
-        phone: "+94 77 725 7027",
+        phone: "+94 71 694 6480",
         image: nadaliImg,
     },
 ];

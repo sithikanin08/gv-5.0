@@ -133,18 +133,30 @@ const RolesSection: React.FC = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6"
           style={{ gap: '28px' }}
         >
           {ROLES.map((role, idx) => {
             const accent = accents[idx % accents.length];
+
+            // Logic to center the last row if it has fewer than 3 items (lg breakpoint)
+            const lastRowItemCount = ROLES.length % 3;
+            const isLastRow = idx >= ROLES.length - lastRowItemCount;
+            let gridClass = "lg:col-span-2";
+
+            if (isLastRow && lastRowItemCount === 2 && idx === ROLES.length - 2) {
+              gridClass += " lg:col-start-2";
+            } else if (isLastRow && lastRowItemCount === 1) {
+              gridClass += " lg:col-start-3";
+            }
+
             return (
               <motion.div
                 key={role.title}
                 variants={cardVariants}
                 onClick={() => openModal(role)}
                 whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                className="cursor-pointer group relative"
+                className={`cursor-pointer group relative ${gridClass}`}
               >
                 {/* Card body */}
                 <div
