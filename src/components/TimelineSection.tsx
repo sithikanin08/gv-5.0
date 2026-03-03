@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FileText, Mic, GraduationCap, Megaphone, Users, CalendarCheck, PartyPopper, Trophy } from 'lucide-react';
+import { FileText, Mic, GraduationCap, Megaphone, Users, CalendarCheck, Trophy } from 'lucide-react';
 
 const timelineItems = [
     {
